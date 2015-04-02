@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/e"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="CEG COMPLAINTS"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+         android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="User Name" 
+         android:textColor="#FFFF00"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextUserName"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+         android:textColor="#FFFF00" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextPassword"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword" 
+         android:textColor="#FFFF00">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextCollegeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextConfirmPassword"
+        android:ems="10"
+        android:hint="College Id" 
+         android:textColor="#FFFF00"/>
+
+    <ImageButton
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextCollegeId"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/user"
+         />
+
+    <ImageButton
+        android:id="@+id/buttonLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonCreateAccount"
+        android:src="@drawable/login1" />
+
+</RelativeLayout>

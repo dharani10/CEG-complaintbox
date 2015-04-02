@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/h" >
+
+      <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt" />
+
+        <EditText
+            android:id="@+id/editTextSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/spinner1"
+            android:layout_below="@+id/spinner1"
+            android:layout_margin="5dp"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:hint="Subject"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+     
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/editTextSubject"
+            android:layout_margin="5dp"
+            android:gravity="top|left"
+            android:hint="type complaint here!"
+            android:inputType="textMultiLine" />
+        
+       <ImageButton
+            android:id="@+id/buttonSend"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/editTextMessage"
+            android:layout_margin="5dp"
+            android:src="@drawable/mail" />
+       
+       
+        
+                
+
+             <ImageButton
+                 android:id="@+id/ButtonSendHome"
+                 android:layout_width="80dp"
+                 android:layout_height="60dp"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginLeft="42dp"
+                 android:layout_toRightOf="@+id/buttonSend"
+                 android:onClick="sendHome"
+                 android:src="@drawable/house" />
+
+          
+  </RelativeLayout>
+
+
+</ScrollView>

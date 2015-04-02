@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/ppl"
+     >
+      
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Give ur suggestions here...!"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            />
+
+<ImageButton
+    android:id="@+id/ButtonSendFeedback"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="84dp"
+    android:onClick="sendFeedback"
+    android:src="@drawable/feedback"
+    android:text="Send" />
+
+<EditText
+    android:id="@+id/EditTextFeedbackBody"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/CheckBoxResponse"
+    android:layout_alignParentLeft="true"
+    android:ems="10"
+    android:hint="Feedback"
+    android:inputType="textMultiLine"
+    android:lines="5" >
+
+    <requestFocus />
+</EditText>
+
+<CheckBox
+    android:id="@+id/CheckBoxResponse"
+    android:layout_width="150pt"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/ButtonSendFeedback"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="15dp"
+    android:text="Would you like an email response?" />
+
+<EditText
+    android:id="@+id/EditTextEmail"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/EditTextFeedbackBody"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="102dp"
+    android:ems="10"
+    android:hint="Email"
+    android:inputType="textEmailAddress" />
+
+<EditText
+    android:id="@+id/EditTextName"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/EditTextEmail"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="21dp"
+    android:ems="10"
+    android:hint="Name"
+    android:inputType="textPersonName" />
+
+<ImageButton
+    android:id="@+id/ButtonSendHome"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="10dp"
+    android:onClick="sendHome"
+    android:src="@drawable/house" />
+
+    </RelativeLayout>
